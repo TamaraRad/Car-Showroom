@@ -28,16 +28,13 @@ body {
 
 
 .logo {
-    height: 60px;
-    width: 201px;
-    left: 74px;
-    top: 46px;
     display: flex;
     font-size: 20px;
+    align-items: center;
 }
 
 .title {
-    margin: 21px;
+    margin-left: 21px;
     font-style: normal;
 }
 
@@ -58,10 +55,50 @@ body {
     margin-right: 71px;
 }
 
+.nav__link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header__search {
+width: 189px;
+position: relative;
+}
+
+.header__search::before {
+content: '';
+width: 20px;
+height: 20px;
+display: block;
+background-image: url(img/search.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+position: absolute;
+bottom: 8px;
+left: 0;
+}
+
+.header__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: block;
+    height: 100%;
+    padding-bottom: 8px;
+    padding-left: 44px;
+    
+}
+
 .content {
     display: block;
     margin-top: 111px;
 }
+
 
 .text {
     font-size: 350px;
@@ -77,6 +114,7 @@ body {
     height: 1024px;
     margin-bottom: 128px;
 }
+
 
 .footer {
     margin-left: 739px;
